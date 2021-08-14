@@ -1,0 +1,72 @@
+<html>
+    <body>
+        <style>
+            table, th, td{
+                border: 2px solid black;
+        border-collapse: collapse;
+            }
+        </style>
+        <p>My favourite TV shows</p>
+        <ul>
+            <li>Prison break</li>
+            <li>JoJo</li>
+            <li>Conan</li>
+        
+        </ul>
+        <p>Top 5 most populated country</p>
+        <ol>
+            <li><strong>China</strong> 1.4 billion</li>
+            <li><strong>India</strong> 1.3 billion</li>
+            <li><strong>USA</strong> 331 million</li>
+            <li><strong>Indonesia</strong> 273 million</li>
+            <li><strong>Pakistan</strong> 220 Million</li>
+
+        </ol>
+        <table>
+            <tr>
+                <th>Country</th>
+                <th>Population</th>
+            </tr>
+            <tr>
+                <td>china</td>
+                <td>1.4 Billion</td>
+            </tr>
+            <tr>
+                <td>India</td>
+                <td>1.3 Billion</td>
+            </tr>
+        </table>
+        <button><p>Click Me!!!</p></button>
+        <script>
+            var button = document.querySelector("button");
+            function handleClick(event) {
+                console.log("Hello World");
+              var p = document.createElement("p");
+                p.innerHTML = "hello world";
+                document.body.append(p);
+            }
+            button.addEventListener("click", handleClick);
+        </script>
+        <h1>0</h1>
+        <button id="addButton">Add 1</button>
+        <button id="subtractButton">Subtract 1</button>
+        <script>
+             var addButton= document.querySelector("#addButton");
+             var subButton= document.querySelector("#subtractButton");
+             var number= 0;
+             var display= document.querySelector("h1");
+             function handleAdd(event){
+                 console.log ("add one");
+                number= number + 1;
+                display.innerHTML = number;
+             }
+             addButton.addEventListener("click", handleAdd)
+             function handleSubtract(event){
+                 console.log ("Minus one");
+                 number= number - 1;
+                 display.innerHTML = number;
+             }
+             subButton.addEventListener("click", handleSubtract)
+        </script>
+    </body>
+</html>
