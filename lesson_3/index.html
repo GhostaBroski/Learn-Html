@@ -1,0 +1,68 @@
+<html>
+    <body>
+       <div class="page-wrapper">
+        <form onsubmit="onsubmit(event)" class="form">
+            <h1 class="title">Login Here</h1>
+            <div>
+             
+                <input type="text" placeholder="Enter user name" required id="username" class="username">
+            </div>      
+           <div>
+               
+                <input type="password" placeholder="Enter password" required id="password" class="password">
+            </div>
+            <button class="login">Login</button>
+        </form>
+        </div>
+        <script>
+            function onsubmit(event){
+                event.preventDefault();
+                console.log ("Form Submitted");
+            }
+        </script>
+        <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+        .form{
+            background-color: #ffffff;
+            width: 300px;
+            border-radius: 9px;
+            padding: 15px;
+        }
+        .page-wrapper{
+            background-color: #5d90c9;
+            width: 100%;
+            height: 100%;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .form .title{
+            text-align: center;
+            font-weight: lighter;
+            font-size: 23px;
+            margin-bottom: 30px;
+        }
+        .form input {
+         width: 100%;
+         padding: 8px;
+         border-radius: 999px;
+         border: none;
+         background-color: #ecf0fc;
+         margin-bottom: 15px;
+        } 
+        .form .login{
+            width: 100%;
+            padding: 8px;
+            border-radius: 999px;
+            border: none;
+            background-color: #057aff;
+            color: #ffffff;
+        }
+
+        </style>  
+    </body>
+    
+</html>
