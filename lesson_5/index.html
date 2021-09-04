@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <link href="css/all.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Slab&family=Roboto:ital,wght@0,400;0,700;0,900;1,100&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <aside>
+            <ul>
+            <li class="active"><i class="fas fa-cube"></i>Dashboard</li>
+            <li><i class="far fa-user"></i>Members</li>
+            <li><i class="fas fa-suitcase"></i>Project</li>
+            <li><i class="far fa-comment-alt"></i>Messages</li>
+            <li><i class="fas fa-user-friends"></i>Client</li>
+            <li><i class="far fa-calendar"></i>Workplan</li>
+            <li><i class="fas fa-sign-out-alt"></i>Log out</li>
+            </ul>
+        </aside>
+        <button>CONTINUE</button>
+        <style>
+            body{
+                font-family: 'Roboto', sans-serif;
+                padding: 0;
+                margin: 0;
+            }
+            i{
+                padding: 20px;
+                font-size: larger;
+                margin: 10px;
+            }
+            ul{
+                list-style-type: none;
+                padding: 10;
+            }
+            li{
+                font-weight: bold;
+                color: rgb(209, 202, 202);
+               
+                
+            }
+            aside{
+                float: left;
+                background-color: rgb(250, 246, 246);
+                height: 100%;
+                width: 250px;
+
+            }
+            .fa-cube{
+                color: red;
+            }
+            .active{
+                color: black;
+                font-weight: 700;
+            }
+            li:hover{
+                color: black;
+                background-color:rgb(177, 171, 171);
+                border-radius: 10px;
+
+            }
+            li:active{
+                color: red;
+                background-color: white;
+            }
+            button{
+                background-color: white;
+                border-radius: 5px;
+                font-size: 20px;
+                border-color: red;
+                color: red;
+                padding: 10px 50px;
+                transition:all 0.5s;
+                border-style: solid;
+                box-shadow: 1px 4px 4px rgba(0,0,0,0.4);
+            }
+            button:hover{
+                background-color: red;
+                color: white; 
+                box-shadow: 1px 10px 10px rgb(0,0,0,0.4);
+            }
+            
+            
+        </style>
+    </body>
