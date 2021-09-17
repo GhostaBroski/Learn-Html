@@ -29,3 +29,10 @@ function computeCheck(a) {
     return false
 }
 console.log("computeCheck", computeCheck(11))
+function alert(x) {
+    let a = 6
+    if(a = 3+3) {
+        return true
+    }
+    return  false
+}
