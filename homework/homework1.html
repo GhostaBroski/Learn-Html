@@ -26,7 +26,10 @@
       <div class="mainBody">
           <h1>I am<br /> a Designer</h1>
           <P class="text">100% html5 bootstrap templates Made <br />by <a href="https://google.com">colorlib.com</a></a></P>
-      <style>
+        <div class="middle">
+            <div class="text">Ghosta</div>
+        </div>
+     <style>
           body{
               margin: 0;
               padding: 0;
@@ -38,7 +41,23 @@
             border-radius: 50%;
             width: 150px;
             height: 150px;
-            padding: 25px
+            padding: 25px;
+            transition: .5s ease;
+            backface-visibility: hidden;
+          }
+          .middle{
+              transition: .5s ease;
+              opacity: 0;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+          }
+          .avatar:hover .image{
+              opacity: 0.3;
+          }
+          .avatar:hover .middle{
+              opacity: 1;
           }
           .sidebar{
               float: left;
@@ -77,6 +96,7 @@
              background-color: white;
              color: black;
          }
+
          
       
           
