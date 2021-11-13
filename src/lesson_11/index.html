@@ -1,0 +1,40 @@
+<html>
+    <body>
+        <script>
+            function C(){
+                console.log("Entering C()");
+                console.trace();
+                console.log("Exiting C()");
+            }
+            function B(){
+                console.log("Entering B()");
+                C();
+                console.log("Exiting B()");
+            }
+            function A(){
+                console.log("Entering A()");
+                B();
+                console.log("Exiting A()");
+            }
+            A();
+            {
+                let userName = "Ali";
+                console.log(userName);
+            }
+            {
+                let userName = "Mike";
+                console.log(userName)
+            }
+            {
+                let userName = "Ali";
+                {
+                    let userName = "Mike";
+                    console.log(userName)
+                }
+                console.log(userName);
+            }
+             
+            
+        </script>
+    </body>
+</html>
