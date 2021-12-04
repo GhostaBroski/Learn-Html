@@ -73,7 +73,7 @@ describe("MyArray",() => {
     it("should return correct value when intialized with values", () => {
         let arr = new MyArray(1,2,3,4);
         arr.insertValue(0,5);
-        expect(arr.getValue(0)).toBe(5)
+                              expect(arr.getValue(0)).toBe(5)
     })
     it("should say if value exist or not when insert with wanted value", () => {
         let arr = new MyArray(1,2,3,4,5);
